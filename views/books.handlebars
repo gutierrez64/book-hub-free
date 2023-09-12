@@ -1,0 +1,17 @@
+<h1>Livros disponíveis:</h1>
+<div class="books-container">
+    {{#each books}}
+    <div class="book-item">
+        <section>
+            #{{this.id}} -
+            <span class="bold"><a href="/books/{{this.id}}" style="color: #f67968;">{{this.title}}</a></span>
+            - {{this.pageqty}} páginas
+        </section>
+        <ul>
+            <li><a href="https://5ca0e999-de9a-47e0-9b77-7e3eeab0592c.usrfiles.com/ugd/5ca0e9_37322a5171f142eabef480acf5494438.pdf"
+                    download="{{this.title}}"><i class="bi bi-book"></i></a></li>
+            <li><a href="#"><i class="bi bi-bookmark"></i></a></li>
+        </ul>
+    </div>
+    {{/each}}
+</div>
